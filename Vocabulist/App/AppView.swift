@@ -23,9 +23,11 @@ struct AppView: View {
         NavigationSplitView {
             List(selection: $selection) {
                 NavigationLink(value: WordListCategory.allWords) {
-                    Label("All Words", systemImage: "list.bullet")
+                    Label(WordListCategory.allWords.rawValue, systemImage: "list.bullet")
                 }
             }
+            .frame(minWidth: 224)
+            .navigationTitle("Vocabulist")
         } detail: {
             WordTable(words: words.map { $0 })
                 .toolbar {
@@ -35,10 +37,11 @@ struct AppView: View {
                         }
                     }
                 }
+                .navigationTitle(WordListCategory.allWords.rawValue)
         }
-        .navigationDestination(for: WordListCategory.self) { category in
-            WordTable(words: words.map { $0 })
-        }
+        #if os(macOS)
+        .task { selection = .allWords }
+        #endif
     }
     
     private func addWord() {

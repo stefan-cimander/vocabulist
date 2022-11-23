@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum WordListCategory {
-    case allWords
+enum WordListCategory: String {
+    case allWords = "All Words"
 }
