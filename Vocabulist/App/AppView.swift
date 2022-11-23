@@ -16,11 +16,15 @@ struct AppView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Word.creationDate, ascending: true)],
         animation: .default)
     private var words: FetchedResults<Word>
+    
+    @State private var selection: WordListCategory?
 
     var body: some View {
         NavigationSplitView {
-            List {
-                Label("All Words", systemImage: "list.bullet")
+            List(selection: $selection) {
+                NavigationLink(value: WordListCategory.allWords) {
+                    Label("All Words", systemImage: "list.bullet")
+                }
             }
         } detail: {
             WordTable(words: words.map { $0 })
@@ -31,6 +35,9 @@ struct AppView: View {
                         }
                     }
                 }
+        }
+        .navigationDestination(for: WordListCategory.self) { category in
+            WordTable(words: words.map { $0 })
         }
     }
     

@@ -14,6 +14,7 @@
 		E332C425292E83AA002C6FC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E332C424292E83AA002C6FC4 /* Assets.xcassets */; };
 		E332C429292E83AA002C6FC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E332C428292E83AA002C6FC4 /* Preview Assets.xcassets */; };
 		E332C434292E9080002C6FC4 /* WordTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C433292E9080002C6FC4 /* WordTable.swift */; };
+		E35E0A38292EBD7E009E5A9F /* WordListCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E0A37292EBD7E009E5A9F /* WordListCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E332C426292E83AA002C6FC4 /* Vocabulist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vocabulist.entitlements; sourceTree = "<group>"; };
 		E332C428292E83AA002C6FC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E332C433292E9080002C6FC4 /* WordTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTable.swift; sourceTree = "<group>"; };
+		E35E0A37292EBD7E009E5A9F /* WordListCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		E332C430292E8EB5002C6FC4 /* Word */ = {
 			isa = PBXGroup;
 			children = (
+				E35E0A37292EBD7E009E5A9F /* WordListCategory.swift */,
 				E332C433292E9080002C6FC4 /* WordTable.swift */,
 			);
 			path = Word;
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E332C41C292E839F002C6FC4 /* App.swift in Sources */,
+				E35E0A38292EBD7E009E5A9F /* WordListCategory.swift in Sources */,
 				E332C434292E9080002C6FC4 /* WordTable.swift in Sources */,
 				E332C41E292E839F002C6FC4 /* Persistence.swift in Sources */,
 				E332C423292E839F002C6FC4 /* AppView.swift in Sources */,
