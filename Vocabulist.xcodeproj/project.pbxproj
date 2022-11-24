@@ -12,6 +12,8 @@
 		E3C1183729300C72004E2766 /* AddWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1183629300C72004E2766 /* AddWordView.swift */; };
 		E3C1183B29301149004E2766 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1183A29301149004E2766 /* String.swift */; };
 		E3C1183C29301149004E2766 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1183A29301149004E2766 /* String.swift */; };
+		E3C1184029301728004E2766 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E3C1184329301728004E2766 /* Localizable.strings */; };
+		E3C1184129301728004E2766 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E3C1184329301728004E2766 /* Localizable.strings */; };
 		E3D76C0A293008E000A0092D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3D76C09293008E000A0092D /* Preview Assets.xcassets */; };
 		E3D76C0E293008FB00A0092D /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C41B292E839F002C6FC4 /* App.swift */; };
 		E3D76C0F293008FD00A0092D /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C422292E839F002C6FC4 /* AppView.swift */; };
@@ -44,6 +46,8 @@
 		E3C1183129300AE5004E2766 /* AddWordInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordInput.swift; sourceTree = "<group>"; };
 		E3C1183629300C72004E2766 /* AddWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordView.swift; sourceTree = "<group>"; };
 		E3C1183A29301149004E2766 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E3C1184229301728004E2766 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E3C1184729301841004E2766 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E3D76C00293008DF00A0092D /* Vocabulist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocabulist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D76C09293008E000A0092D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E3D76C1A2930099B00A0092D /* Vocabulist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocabulist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +100,7 @@
 				E332C430292E8EB5002C6FC4 /* Words */,
 				E332C41D292E839F002C6FC4 /* Persistence.swift */,
 				E332C424292E83AA002C6FC4 /* Assets.xcassets */,
+				E3C1184329301728004E2766 /* Localizable.strings */,
 				E332C41F292E839F002C6FC4 /* Vocabulist.xcdatamodeld */,
 				E332C427292E83AA002C6FC4 /* Preview Content */,
 			);
@@ -274,6 +279,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = E332C40F292E839F002C6FC4;
 			productRefGroup = E332C419292E839F002C6FC4 /* Products */;
@@ -292,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3D76C0A293008E000A0092D /* Preview Assets.xcassets in Resources */,
+				E3C1184029301728004E2766 /* Localizable.strings in Resources */,
 				E3D76C142930090700A0092D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3D76C242930099C00A0092D /* Preview Assets.xcassets in Resources */,
+				E3C1184129301728004E2766 /* Localizable.strings in Resources */,
 				E3D76C2A293009B000A0092D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,11 +350,24 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		E3C1184329301728004E2766 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3C1184229301728004E2766 /* en */,
+				E3C1184729301841004E2766 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		E332C42A292E83AA002C6FC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -405,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

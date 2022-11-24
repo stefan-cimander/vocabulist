@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  Vocabulist
+ 
+  🇩🇪 German
+
+  Created by Stefan Cimander on 24.11.22.
+*/
+
+// Languages
+
+"German" = "Deutsch";
+"Spanish" = "Spanisch";
+
+
+// Words
+
+// Words - Overview
+"All words" = "Alle Wörter";
+"Add word" = "Wort hinzufügen";
+"Created" = "Erstellt";
+"Level" = "Level";
+
+// Words - Add
+"New word" = "Neues Wort";
+"Add" = "Hinzufügen";
+"Cancel" = "Abbrechen";

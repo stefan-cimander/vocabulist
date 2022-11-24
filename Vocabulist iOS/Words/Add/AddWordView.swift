@@ -26,7 +26,7 @@ struct AddWordView: View {
                 .autocapitalization(.none)
                 .disableAutocorrection(true)
             }
-            .navigationBarTitle("Add Word", displayMode: .inline)
+            .navigationBarTitle("New word", displayMode: .inline)
             .navigationBarItems(leading: cancelButton, trailing: doneButton)
         }
     }

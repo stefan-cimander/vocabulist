@@ -24,7 +24,7 @@ struct AppView: View {
         NavigationSplitView {
             List(selection: $selection) {
                 NavigationLink(value: WordListCategory.allWords) {
-                    Label(WordListCategory.allWords.rawValue, systemImage: "list.bullet")
+                    Label(WordListCategory.allWords.localized, systemImage: "list.bullet")
                 }
             }
             .frame(minWidth: 224)
@@ -34,14 +34,14 @@ struct AppView: View {
                 .toolbar {
                     ToolbarItem {
                         Button(action: { showAddWordDialog.toggle() }) {
-                            Label("Add Word", systemImage: "plus")
+                            Label("Add word", systemImage: "plus")
                         }
                         .sheet(isPresented: $showAddWordDialog) {
                             AddWordView(onAdd: addWord)
                         }
                     }
                 }
-                .navigationTitle(WordListCategory.allWords.rawValue)
+                .navigationTitle(WordListCategory.allWords.localized)
         }
         #if os(macOS)
         .task { selection = .allWords }

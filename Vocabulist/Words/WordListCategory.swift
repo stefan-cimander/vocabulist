@@ -5,8 +5,12 @@
 //  Created by Stefan Cimander on 23.11.22.
 //
 
-import Foundation
+import SwiftUI
 
 enum WordListCategory: String {
-    case allWords = "All Words"
+    case allWords = "All words"
+    
+    var localized: LocalizedStringKey {
+        LocalizedStringKey(self.rawValue)
+    }
 }
