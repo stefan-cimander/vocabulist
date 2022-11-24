@@ -37,7 +37,7 @@ struct AppView: View {
                             Label("Add Word", systemImage: "plus")
                         }
                         .sheet(isPresented: $showAddWordDialog) {
-                            AddWordDialog(onAdd: addWord)
+                            AddWordView(onAdd: addWord)
                         }
                     }
                 }
@@ -48,11 +48,11 @@ struct AppView: View {
         #endif
     }
     
-    private func addWord(withForeignName foreignName: String, nativeName: String) {
+    private func addWord(with input: AddWordInput) {
         withAnimation {
             let newWord = Word(context: viewContext)
-            newWord.foreignName = foreignName
-            newWord.nativeName = nativeName
+            newWord.foreignName = input.foreignName
+            newWord.nativeName = input.nativeName
             newWord.creationDate = Date()
             newWord.level = 1
             try? viewContext.save()
