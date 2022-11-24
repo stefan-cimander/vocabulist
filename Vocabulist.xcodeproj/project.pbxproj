@@ -7,33 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E332C41C292E839F002C6FC4 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C41B292E839F002C6FC4 /* App.swift */; };
-		E332C41E292E839F002C6FC4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C41D292E839F002C6FC4 /* Persistence.swift */; };
-		E332C421292E839F002C6FC4 /* Vocabulist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E332C41F292E839F002C6FC4 /* Vocabulist.xcdatamodeld */; };
-		E332C423292E839F002C6FC4 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C422292E839F002C6FC4 /* AppView.swift */; };
-		E332C425292E83AA002C6FC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E332C424292E83AA002C6FC4 /* Assets.xcassets */; };
-		E332C429292E83AA002C6FC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E332C428292E83AA002C6FC4 /* Preview Assets.xcassets */; };
-		E332C434292E9080002C6FC4 /* WordTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C433292E9080002C6FC4 /* WordTable.swift */; };
-		E35E0A38292EBD7E009E5A9F /* WordListCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E0A37292EBD7E009E5A9F /* WordListCategory.swift */; };
-		E35E0A3D292EE16C009E5A9F /* AddWordDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E0A3C292EE16C009E5A9F /* AddWordDialog.swift */; };
+		E3D76C0A293008E000A0092D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3D76C09293008E000A0092D /* Preview Assets.xcassets */; };
+		E3D76C0E293008FB00A0092D /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C41B292E839F002C6FC4 /* App.swift */; };
+		E3D76C0F293008FD00A0092D /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C422292E839F002C6FC4 /* AppView.swift */; };
+		E3D76C10293008FF00A0092D /* WordListCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E0A37292EBD7E009E5A9F /* WordListCategory.swift */; };
+		E3D76C112930090200A0092D /* AddWordDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E0A3C292EE16C009E5A9F /* AddWordDialog.swift */; };
+		E3D76C122930090200A0092D /* WordTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C433292E9080002C6FC4 /* WordTable.swift */; };
+		E3D76C132930090400A0092D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C41D292E839F002C6FC4 /* Persistence.swift */; };
+		E3D76C142930090700A0092D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E332C424292E83AA002C6FC4 /* Assets.xcassets */; };
+		E3D76C152930090D00A0092D /* Vocabulist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E332C41F292E839F002C6FC4 /* Vocabulist.xcdatamodeld */; };
+		E3D76C242930099C00A0092D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3D76C232930099C00A0092D /* Preview Assets.xcassets */; };
+		E3D76C29293009AE00A0092D /* Vocabulist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E332C41F292E839F002C6FC4 /* Vocabulist.xcdatamodeld */; };
+		E3D76C2A293009B000A0092D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E332C424292E83AA002C6FC4 /* Assets.xcassets */; };
+		E3D76C2B293009B500A0092D /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C41B292E839F002C6FC4 /* App.swift */; };
+		E3D76C2C293009B500A0092D /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C422292E839F002C6FC4 /* AppView.swift */; };
+		E3D76C2D293009B500A0092D /* WordTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C433292E9080002C6FC4 /* WordTable.swift */; };
+		E3D76C2E293009B500A0092D /* WordListCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E0A37292EBD7E009E5A9F /* WordListCategory.swift */; };
+		E3D76C2F293009B500A0092D /* AddWordDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E0A3C292EE16C009E5A9F /* AddWordDialog.swift */; };
+		E3D76C30293009B500A0092D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C41D292E839F002C6FC4 /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E332C418292E839F002C6FC4 /* Vocabulist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocabulist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E332C41B292E839F002C6FC4 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		E332C41D292E839F002C6FC4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		E332C420292E839F002C6FC4 /* Vocabulist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vocabulist.xcdatamodel; sourceTree = "<group>"; };
 		E332C422292E839F002C6FC4 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		E332C424292E83AA002C6FC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E332C426292E83AA002C6FC4 /* Vocabulist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vocabulist.entitlements; sourceTree = "<group>"; };
 		E332C428292E83AA002C6FC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E332C433292E9080002C6FC4 /* WordTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTable.swift; sourceTree = "<group>"; };
 		E35E0A37292EBD7E009E5A9F /* WordListCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListCategory.swift; sourceTree = "<group>"; };
 		E35E0A3C292EE16C009E5A9F /* AddWordDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordDialog.swift; sourceTree = "<group>"; };
+		E3D76C00293008DF00A0092D /* Vocabulist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocabulist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D76C09293008E000A0092D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E3D76C1A2930099B00A0092D /* Vocabulist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocabulist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D76C232930099C00A0092D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E3D76C252930099C00A0092D /* Vocabulist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vocabulist.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E332C415292E839F002C6FC4 /* Frameworks */ = {
+		E3D76BFD293008DF00A0092D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D76C172930099B00A0092D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				E332C41A292E839F002C6FC4 /* Vocabulist */,
+				E3D76C01293008DF00A0092D /* Vocabulist iOS */,
+				E3D76C1B2930099B00A0092D /* Vocabulist macOS */,
 				E332C419292E839F002C6FC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,7 +75,8 @@
 		E332C419292E839F002C6FC4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E332C418292E839F002C6FC4 /* Vocabulist.app */,
+				E3D76C00293008DF00A0092D /* Vocabulist.app */,
+				E3D76C1A2930099B00A0092D /* Vocabulist.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,7 +88,6 @@
 				E332C430292E8EB5002C6FC4 /* Word */,
 				E332C41D292E839F002C6FC4 /* Persistence.swift */,
 				E332C424292E83AA002C6FC4 /* Assets.xcassets */,
-				E332C426292E83AA002C6FC4 /* Vocabulist.entitlements */,
 				E332C41F292E839F002C6FC4 /* Vocabulist.xcdatamodeld */,
 				E332C427292E83AA002C6FC4 /* Preview Content */,
 			);
@@ -100,24 +121,74 @@
 			path = Word;
 			sourceTree = "<group>";
 		};
+		E3D76C01293008DF00A0092D /* Vocabulist iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E3D76C08293008E000A0092D /* Preview Content */,
+			);
+			path = "Vocabulist iOS";
+			sourceTree = "<group>";
+		};
+		E3D76C08293008E000A0092D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E3D76C09293008E000A0092D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E3D76C1B2930099B00A0092D /* Vocabulist macOS */ = {
+			isa = PBXGroup;
+			children = (
+				E3D76C252930099C00A0092D /* Vocabulist.entitlements */,
+				E3D76C222930099C00A0092D /* Preview Content */,
+			);
+			path = "Vocabulist macOS";
+			sourceTree = "<group>";
+		};
+		E3D76C222930099C00A0092D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E3D76C232930099C00A0092D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E332C417292E839F002C6FC4 /* Vocabulist */ = {
+		E3D76BFF293008DF00A0092D /* Vocabulist iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E332C42C292E83AA002C6FC4 /* Build configuration list for PBXNativeTarget "Vocabulist" */;
+			buildConfigurationList = E3D76C0B293008E000A0092D /* Build configuration list for PBXNativeTarget "Vocabulist iOS" */;
 			buildPhases = (
-				E332C414292E839F002C6FC4 /* Sources */,
-				E332C415292E839F002C6FC4 /* Frameworks */,
-				E332C416292E839F002C6FC4 /* Resources */,
+				E3D76BFC293008DF00A0092D /* Sources */,
+				E3D76BFD293008DF00A0092D /* Frameworks */,
+				E3D76BFE293008DF00A0092D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Vocabulist;
-			productName = Vocabulist;
-			productReference = E332C418292E839F002C6FC4 /* Vocabulist.app */;
+			name = "Vocabulist iOS";
+			productName = "Vocabulist iOS";
+			productReference = E3D76C00293008DF00A0092D /* Vocabulist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3D76C192930099B00A0092D /* Vocabulist macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3D76C262930099C00A0092D /* Build configuration list for PBXNativeTarget "Vocabulist macOS" */;
+			buildPhases = (
+				E3D76C162930099B00A0092D /* Sources */,
+				E3D76C172930099B00A0092D /* Frameworks */,
+				E3D76C182930099B00A0092D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vocabulist macOS";
+			productName = "Vocabulist macOS";
+			productReference = E3D76C1A2930099B00A0092D /* Vocabulist.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -130,7 +201,10 @@
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					E332C417292E839F002C6FC4 = {
+					E3D76BFF293008DF00A0092D = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					E3D76C192930099B00A0092D = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
@@ -148,35 +222,59 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E332C417292E839F002C6FC4 /* Vocabulist */,
+				E3D76BFF293008DF00A0092D /* Vocabulist iOS */,
+				E3D76C192930099B00A0092D /* Vocabulist macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E332C416292E839F002C6FC4 /* Resources */ = {
+		E3D76BFE293008DF00A0092D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E332C429292E83AA002C6FC4 /* Preview Assets.xcassets in Resources */,
-				E332C425292E83AA002C6FC4 /* Assets.xcassets in Resources */,
+				E3D76C0A293008E000A0092D /* Preview Assets.xcassets in Resources */,
+				E3D76C142930090700A0092D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D76C182930099B00A0092D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D76C242930099C00A0092D /* Preview Assets.xcassets in Resources */,
+				E3D76C2A293009B000A0092D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E332C414292E839F002C6FC4 /* Sources */ = {
+		E3D76BFC293008DF00A0092D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E332C41C292E839F002C6FC4 /* App.swift in Sources */,
-				E35E0A38292EBD7E009E5A9F /* WordListCategory.swift in Sources */,
-				E332C434292E9080002C6FC4 /* WordTable.swift in Sources */,
-				E332C41E292E839F002C6FC4 /* Persistence.swift in Sources */,
-				E332C423292E839F002C6FC4 /* AppView.swift in Sources */,
-				E35E0A3D292EE16C009E5A9F /* AddWordDialog.swift in Sources */,
-				E332C421292E839F002C6FC4 /* Vocabulist.xcdatamodeld in Sources */,
+				E3D76C0F293008FD00A0092D /* AppView.swift in Sources */,
+				E3D76C132930090400A0092D /* Persistence.swift in Sources */,
+				E3D76C0E293008FB00A0092D /* App.swift in Sources */,
+				E3D76C112930090200A0092D /* AddWordDialog.swift in Sources */,
+				E3D76C152930090D00A0092D /* Vocabulist.xcdatamodeld in Sources */,
+				E3D76C122930090200A0092D /* WordTable.swift in Sources */,
+				E3D76C10293008FF00A0092D /* WordListCategory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D76C162930099B00A0092D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D76C30293009B500A0092D /* Persistence.swift in Sources */,
+				E3D76C2B293009B500A0092D /* App.swift in Sources */,
+				E3D76C2E293009B500A0092D /* WordListCategory.swift in Sources */,
+				E3D76C2F293009B500A0092D /* AddWordDialog.swift in Sources */,
+				E3D76C2C293009B500A0092D /* AppView.swift in Sources */,
+				E3D76C2D293009B500A0092D /* WordTable.swift in Sources */,
+				E3D76C29293009AE00A0092D /* Vocabulist.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,83 +390,124 @@
 			};
 			name = Release;
 		};
-		E332C42D292E83AA002C6FC4 /* Debug */ = {
+		E3D76C0C293008E000A0092D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Vocabulist/Vocabulist.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Vocabulist/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Vocabulist iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = V6Y747LYEV;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.nordlicht.Vocabulist;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				PRODUCT_NAME = Vocabulist;
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E332C42E292E83AA002C6FC4 /* Release */ = {
+		E3D76C0D293008E000A0092D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Vocabulist/Vocabulist.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Vocabulist/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Vocabulist iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = V6Y747LYEV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.nordlicht.Vocabulist;
+				PRODUCT_NAME = Vocabulist;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3D76C272930099C00A0092D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Vocabulist macOS/Vocabulist.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vocabulist macOS/Preview Content\"";
 				DEVELOPMENT_TEAM = V6Y747LYEV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.nordlicht.Vocabulist;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				PRODUCT_NAME = Vocabulist;
+				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3D76C282930099C00A0092D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Vocabulist macOS/Vocabulist.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vocabulist macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = V6Y747LYEV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.nordlicht.Vocabulist;
+				PRODUCT_NAME = Vocabulist;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -384,11 +523,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E332C42C292E83AA002C6FC4 /* Build configuration list for PBXNativeTarget "Vocabulist" */ = {
+		E3D76C0B293008E000A0092D /* Build configuration list for PBXNativeTarget "Vocabulist iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E332C42D292E83AA002C6FC4 /* Debug */,
-				E332C42E292E83AA002C6FC4 /* Release */,
+				E3D76C0C293008E000A0092D /* Debug */,
+				E3D76C0D293008E000A0092D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3D76C262930099C00A0092D /* Build configuration list for PBXNativeTarget "Vocabulist macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3D76C272930099C00A0092D /* Debug */,
+				E3D76C282930099C00A0092D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
