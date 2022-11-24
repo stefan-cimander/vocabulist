@@ -18,6 +18,7 @@ struct AppView: View {
     private var words: FetchedResults<Word>
     
     @State private var selection: WordListCategory?
+    @State private var showAddWordDialog = false
 
     var body: some View {
         NavigationSplitView {
@@ -32,8 +33,11 @@ struct AppView: View {
             WordTable(words: words.map { $0 })
                 .toolbar {
                     ToolbarItem {
-                        Button(action: addWord) {
+                        Button(action: { showAddWordDialog.toggle() }) {
                             Label("Add Word", systemImage: "plus")
+                        }
+                        .sheet(isPresented: $showAddWordDialog) {
+                            AddWordDialog(onAdd: addWord)
                         }
                     }
                 }
@@ -44,14 +48,13 @@ struct AppView: View {
         #endif
     }
     
-    private func addWord() {
+    private func addWord(withForeignName foreignName: String, nativeName: String) {
         withAnimation {
             let newWord = Word(context: viewContext)
-            newWord.nativeName = "bauen"
-            newWord.foreignName = "construir"
-            newWord.level = 1
+            newWord.foreignName = foreignName
+            newWord.nativeName = nativeName
             newWord.creationDate = Date()
-            
+            newWord.level = 1
             try? viewContext.save()
         }
     }

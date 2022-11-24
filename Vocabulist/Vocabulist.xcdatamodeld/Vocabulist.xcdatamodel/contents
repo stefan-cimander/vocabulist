@@ -3,7 +3,7 @@
     <entity name="Word" representedClassName="Word" syncable="YES" codeGenerationType="class">
         <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="foreignName" optional="YES" attributeType="String"/>
-        <attribute name="level" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="level" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
         <attribute name="nativeName" optional="YES" attributeType="String"/>
     </entity>
 </model>
