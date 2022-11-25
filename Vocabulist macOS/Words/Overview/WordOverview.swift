@@ -16,7 +16,7 @@ struct WordOverview: View {
     }
     
     @State private var selection = Set<Word.ID>()
-    @State private var sortOrder = [KeyPathComparator(\Word.creationDate!, order: .reverse)]
+    @State private var sortOrder = [KeyPathComparator(\Word.creationDate!)]
     
     var body: some View {
         Table(sortedWords, selection: $selection, sortOrder: $sortOrder) {

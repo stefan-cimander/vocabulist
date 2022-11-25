@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct WordRowView: View {
-    
     let word: Word
     
     var body: some View {
