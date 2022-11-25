@@ -1,5 +1,5 @@
 //
-//  WordTable.swift
+//  WordOverview.swift
 //  Vocabulist
 //
 //  Created by Stefan Cimander on 23.11.22.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct WordTable: View {
+struct WordOverview: View {
     
-    var words: [Word]
+    let words: [Word]
     
     private var sortedWords: [Word] {
         words.sorted(using: sortOrder)

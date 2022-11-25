@@ -30,7 +30,7 @@ struct AppView: View {
             .frame(minWidth: 224)
             .navigationTitle("Vocabulist")
         } detail: {
-            WordTable(words: words.map { $0 })
+            WordOverview(words: words.map { $0 })
                 .toolbar {
                     ToolbarItem {
                         Button(action: { showAddWordDialog.toggle() }) {
