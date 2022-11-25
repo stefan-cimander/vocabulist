@@ -9,8 +9,17 @@
 
 // Languages
 
+"English" = "Englisch";
+"French" = "Französisch";
 "German" = "Deutsch";
 "Spanish" = "Spanisch";
+
+
+// Settings
+
+"General" = "Allgemein";
+"Foreign Language" = "Fremdsprache";
+"Native Language" = "Muttersprache";
 
 
 // Words

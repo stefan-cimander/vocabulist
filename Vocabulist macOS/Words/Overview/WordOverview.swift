@@ -16,13 +16,15 @@ struct WordOverview: View {
         words.sorted(using: sortOrder)
     }
     
+    @EnvironmentObject private var settingsStore: SettingsStore
+    
     @State private var selection = Set<Word.ID>()
     @State private var sortOrder = [KeyPathComparator(\Word.creationDate!)]
     
     var body: some View {
         Table(sortedWords, selection: $selection, sortOrder: $sortOrder) {
-            TableColumn("Spanish", value: \.foreignName!)
-            TableColumn("German", value: \.nativeName!)
+            TableColumn(settingsStore.foreignLanguage.localized, value: \.foreignName!)
+            TableColumn(settingsStore.nativeLanguage.localized, value: \.nativeName!)
             TableColumn("Created", value: \.creationDate!) { Text($0.creationDate!, formatter: dateFormatter) }
             TableColumn("Level", value: \.level.description).width(min: 50, max: 60)
         }
