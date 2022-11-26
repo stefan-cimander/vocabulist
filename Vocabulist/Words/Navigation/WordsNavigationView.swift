@@ -1,14 +1,13 @@
 //
-//  AppView.swift
+//  WordsNavigationView.swift
 //  Vocabulist
 //
-//  Created by Stefan Cimander on 23.11.22.
+//  Created by Stefan Cimander on 26.11.22.
 //
 
 import SwiftUI
-import CoreData
 
-struct AppView: View {
+struct WordsNavigationView: View {
     
     @Environment(\.managedObjectContext) private var viewContext
 
@@ -17,7 +16,7 @@ struct AppView: View {
     
     @State private var selection: WordListCategory?
     @State private var showAddWordDialog = false
-
+    
     var body: some View {
         NavigationSplitView {
             List(selection: $selection) {

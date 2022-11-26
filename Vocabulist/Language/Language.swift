@@ -11,6 +11,7 @@ enum Language: String, CaseIterable {
     case english
     case french
     case german
+    case italian
     case spanish
     
     var localized: LocalizedStringKey {

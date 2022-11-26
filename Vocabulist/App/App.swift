@@ -24,9 +24,11 @@ struct VocabulistApp: App {
             SidebarCommands()
         }
         
+        #if os(macOS)
         Settings {
             SettingsView()
                 .environmentObject(settingsStore)
         }
+        #endif
     }
 }

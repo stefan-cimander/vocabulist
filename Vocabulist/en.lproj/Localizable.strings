@@ -12,7 +12,13 @@
 "English" = "English";
 "French" = "French";
 "German" = "German";
+"Italian" = "Italian";
 "Spanish" = "Spanish";
+
+
+// Profile
+
+"Profile" = "Profile";
 
 
 // Settings
@@ -23,6 +29,8 @@
 
 
 // Words
+
+"Words" = "Words";
 
 // Words - Overview
 "All words" = "All words";
