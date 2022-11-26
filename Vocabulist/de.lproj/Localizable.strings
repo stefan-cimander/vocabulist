@@ -7,10 +7,16 @@
   Created by Stefan Cimander on 24.11.22.
 */
 
+"Add" = "Hinzufügen";
+"Cancel" = "Abbrechen";
+"Delete" = "Löschen";
+
+
 // Chapters
 
 "Chapters" = "Kapitel";
 "New chapter" = "Neues Kapitel";
+"Title" = "Titel";
 
 
 // Languages
@@ -42,11 +48,8 @@
 // Words - Overview
 "All words" = "Alle Wörter";
 "Add word" = "Wort hinzufügen";
-"Delete" = "Löschen";
 "Created" = "Erstellt";
 "Level" = "Level";
 
 // Words - Add
 "New word" = "Neues Wort";
-"Add" = "Hinzufügen";
-"Cancel" = "Abbrechen";

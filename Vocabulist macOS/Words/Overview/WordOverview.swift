@@ -23,10 +23,11 @@ struct WordOverview: View {
     
     var body: some View {
         Table(sortedWords, selection: $selection, sortOrder: $sortOrder) {
-            TableColumn(settingsStore.foreignLanguage.localized, value: \.foreignName!)
-            TableColumn(settingsStore.nativeLanguage.localized, value: \.nativeName!)
-            TableColumn("Created", value: \.creationDate!) { Text($0.creationDate!, formatter: dateFormatter) }
-            TableColumn("Level", value: \.level.description).width(min: 50, max: 60)
+            TableColumn(settingsStore.foreignLanguage.localized, value: \.foreignName!).width(min: 140)
+            TableColumn(settingsStore.nativeLanguage.localized, value: \.nativeName!).width(min: 140)
+            TableColumn("Level", value: \.level.description).width(50)
+            TableColumn("Chapter", value: \.chapter!.title!).width(min: 100)
+            TableColumn("Created", value: \.creationDate!) { Text($0.creationDate!, formatter: dateFormatter) }.width(min: 100)
         }
         .contextMenu {
             deleteButton

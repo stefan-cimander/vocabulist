@@ -44,24 +44,20 @@ struct ChaptersList: View {
         #if os(macOS)
         Spacer()
         HStack {
-            Button(action: addNewChapter) {
-                Label("New chapter", systemImage: "plus.circle")
-            }
-            .opacity(hoverNewChapterButton ? 1.0 : 0.8)
-            .buttonStyle(.plain)
-            .onHover { hoverNewChapterButton = $0 }
-            
+            AddChapterButton(hover: $hoverNewChapterButton, onAdd: addNewChapter)
             Spacer()
         }
         .padding(.vertical, 6)
         .padding(.horizontal, 10)
         #endif
+        
+        
     }
     
-    private func addNewChapter() {
+    private func addNewChapter(with title: String) {
         withAnimation {
             let chapter = Chapter(context: viewContext)
-            chapter.title = "Sample Chapter"
+            chapter.title = title
             chapter.creationDate = Date()
             try? viewContext.save()
         }

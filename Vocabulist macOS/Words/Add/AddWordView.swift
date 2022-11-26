@@ -18,6 +18,14 @@ struct AddWordView: View {
     @State private var nativeName = ""
     
     var body: some View {
+        HStack {
+            Text("New word")
+                .font(.headline)
+            Spacer()
+        }
+        .padding(.leading, 20)
+        .padding(.top)
+        
         Form {
             Section {
                 let foreignLanguage = String(localized: settingsStore.foreignLanguage.localizationValue)

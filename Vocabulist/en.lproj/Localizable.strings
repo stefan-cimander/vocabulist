@@ -7,10 +7,16 @@
   Created by Stefan Cimander on 24.11.22.
 */
 
+"Add" = "Add";
+"Cancel" = "Cancel";
+"Delete" = "Delete";
+
+
 // Chapters
 
 "Chapters" = "Chapters";
-"New chapter" = "Add chapter";
+"New chapter" = "New chapter";
+"Title" = "Title";
 
 
 // Languages
@@ -42,11 +48,8 @@
 // Words - Overview
 "All words" = "All words";
 "Add word" = "Add word";
-"Delete" = "Delete";
 "Created" = "Created";
 "Level" = "Level";
 
 // Words - Add
 "New word" = "New word";
-"Add" = "Add";
-"Cancel" = "Cancel";

@@ -30,6 +30,7 @@ struct WordsDetailView: View {
                     Button(action: { showAddWordDialog.toggle() }) {
                         Label("Add word", systemImage: "plus")
                     }
+                    .disabled(chapter == nil)
                     .sheet(isPresented: $showAddWordDialog) {
                         AddWordView(onAdd: addWord)
                     }

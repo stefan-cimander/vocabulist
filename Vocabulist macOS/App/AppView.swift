@@ -10,5 +10,6 @@ import SwiftUI
 struct AppView: View {
     var body: some View {
         NavigationWordsView()
+            .frame(minWidth: 320, minHeight: 200)
     }
 }
