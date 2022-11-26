@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct WordOverview: View {
+    
     let words: [Word]
     let onDelete: (IndexSet) -> Void
     

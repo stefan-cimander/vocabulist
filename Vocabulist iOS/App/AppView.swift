@@ -14,7 +14,7 @@ struct AppView: View {
     var body: some View {
         TabView(selection: $selection) {
             WordsNavigationView()
-                .tabItem { Label("Words", systemImage: "book") }
+                .tabItem { Label("Vocabulary", systemImage: "book") }
                 .tag(AppTab.words)
             ProfileView()
                 .tabItem { Label("Profile", systemImage: "person") }
