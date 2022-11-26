@@ -14,14 +14,16 @@ struct SettingsView: View {
     var body: some View {
         TabView {
             Form {
-                Picker("\(String(localized: "Foreign Language")):", selection: settingsStore.$foreignLanguage) {
-                    ForEach(Language.allCases, id: \.self) { language in
-                        Text(language.localized)
+                Section {
+                    Picker("\(String(localized: "Foreign Language")):", selection: settingsStore.$foreignLanguage) {
+                        ForEach(Language.allCases, id: \.self) { language in
+                            Text(language.localized)
+                        }
                     }
-                }
-                Picker("\(String(localized: "Native Language")):", selection: settingsStore.$nativeLanguage) {
-                    ForEach(Language.allCases, id: \.self) { language in
-                        Text(language.localized)
+                    Picker("\(String(localized: "Native Language")):", selection: settingsStore.$nativeLanguage) {
+                        ForEach(Language.allCases, id: \.self) { language in
+                            Text(language.localized)
+                        }
                     }
                 }
             }

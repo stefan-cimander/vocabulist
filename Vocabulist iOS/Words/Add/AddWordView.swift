@@ -11,6 +11,7 @@ struct AddWordView: View {
     
     let onAdd: (AddWordInput) -> Void
     
+    @EnvironmentObject private var settingsStore: SettingsStore
     @Environment(\.dismiss) private var dismiss
     
     @State private var foreignName = ""
@@ -20,8 +21,10 @@ struct AddWordView: View {
         NavigationView {
             Form {
                 Section {
-                    TextField("Spanish", text: $foreignName)
-                    TextField("German", text: $nativeName)
+                    let foreignLanguage = String(localized: settingsStore.foreignLanguage.localizationValue)
+                    let nativeLanguage = String(localized: settingsStore.nativeLanguage.localizationValue)
+                    TextField(foreignLanguage, text: $foreignName)
+                    TextField(nativeLanguage, text: $nativeName)
                 }
                 .autocapitalization(.none)
                 .disableAutocorrection(true)
@@ -54,5 +57,6 @@ struct AddWordView: View {
 struct AddWordView_Previews: PreviewProvider {
     static var previews: some View {
         AddWordView() { _ in }
+            .environmentObject(SettingsStore())
     }
 }

@@ -25,6 +25,7 @@ struct WordsNavigationView: View {
                 }
             }
             .frame(minWidth: 224)
+            .environment(\.defaultMinListRowHeight, 52)
             .navigationTitle("Vocabulist")
         } detail: {
             WordOverview(words: words.map { $0 }, onDelete: deleteWords)
