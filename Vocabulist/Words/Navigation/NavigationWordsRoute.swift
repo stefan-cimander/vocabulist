@@ -1,5 +1,5 @@
 //
-//  WordsRoute.swift
+//  NavigationWordsRoute.swift
 //  Vocabulist
 //
 //  Created by Stefan Cimander on 23.11.22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum WordsRoute: Equatable, Hashable {
+enum NavigationWordsRoute: Equatable, Hashable {
     case allWords
     case chapter(_ value: Chapter)
     
