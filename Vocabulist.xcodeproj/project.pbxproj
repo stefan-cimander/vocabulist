@@ -18,8 +18,6 @@
 		E36C045C293161CF00C4B8C8 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C045B293161CF00C4B8C8 /* Language.swift */; };
 		E36C045F2931663C00C4B8C8 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C045E2931663C00C4B8C8 /* SettingsStore.swift */; };
 		E36C04612931705F00C4B8C8 /* SettingsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C04602931705F00C4B8C8 /* SettingsTab.swift */; };
-		E386C9EB2932570400DB1763 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386C9EA2932570400DB1763 /* Chapter.swift */; };
-		E386C9EC2932570400DB1763 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386C9EA2932570400DB1763 /* Chapter.swift */; };
 		E3B6B8F6293133E300B8317C /* WordOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6B8F5293133E300B8317C /* WordOverview.swift */; };
 		E3B6B8F82931342D00B8317C /* WordRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6B8F72931342D00B8317C /* WordRowView.swift */; };
 		E3C1183229300AE5004E2766 /* AddWordInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1183129300AE5004E2766 /* AddWordInput.swift */; };
@@ -64,7 +62,6 @@
 		E36C045B293161CF00C4B8C8 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		E36C045E2931663C00C4B8C8 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		E36C04602931705F00C4B8C8 /* SettingsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTab.swift; sourceTree = "<group>"; };
-		E386C9EA2932570400DB1763 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		E3B6B8F5293133E300B8317C /* WordOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOverview.swift; sourceTree = "<group>"; };
 		E3B6B8F72931342D00B8317C /* WordRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordRowView.swift; sourceTree = "<group>"; };
 		E3C1183129300AE5004E2766 /* AddWordInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordInput.swift; sourceTree = "<group>"; };
@@ -97,6 +94,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E30966F52932827E0071B87F /* Chapters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chapters;
+			sourceTree = "<group>";
+		};
 		E31A619F293224E30019AD94 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				E332C42F292E8877002C6FC4 /* App */,
-				E386C9E9293256E200DB1763 /* Chapters */,
 				E3C118392930113C004E2766 /* Extensions */,
 				E36C045A293161B800C4B8C8 /* Language */,
 				E36C045D2931662600C4B8C8 /* Settings */,
@@ -216,14 +219,6 @@
 				E36C045E2931663C00C4B8C8 /* SettingsStore.swift */,
 			);
 			path = Settings;
-			sourceTree = "<group>";
-		};
-		E386C9E9293256E200DB1763 /* Chapters */ = {
-			isa = PBXGroup;
-			children = (
-				E386C9EA2932570400DB1763 /* Chapter.swift */,
-			);
-			path = Chapters;
 			sourceTree = "<group>";
 		};
 		E3B6B8F32931324800B8317C /* Overview */ = {
@@ -315,6 +310,7 @@
 		E3D76C1B2930099B00A0092D /* Vocabulist macOS */ = {
 			isa = PBXGroup;
 			children = (
+				E30966F52932827E0071B87F /* Chapters */,
 				E31A61A1293226300019AD94 /* App */,
 				E36C045229315EF700C4B8C8 /* Settings */,
 				E3C1182E29300A88004E2766 /* Words */,
@@ -450,7 +446,6 @@
 				E31A61A5293227270019AD94 /* AppTab.swift in Sources */,
 				E3D76C10293008FF00A0092D /* WordsRoute.swift in Sources */,
 				E31A619A2932240E0019AD94 /* SettingsStore.swift in Sources */,
-				E386C9EB2932570400DB1763 /* Chapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +459,6 @@
 				E3C1183C29301149004E2766 /* String.swift in Sources */,
 				E3D76C2E293009B500A0092D /* WordsRoute.swift in Sources */,
 				E36C045429315F0200C4B8C8 /* SettingsView.swift in Sources */,
-				E386C9EC2932570400DB1763 /* Chapter.swift in Sources */,
 				E36C045C293161CF00C4B8C8 /* Language.swift in Sources */,
 				E3D76C2F293009B500A0092D /* AddWordView.swift in Sources */,
 				E3D76C2D293009B500A0092D /* WordOverview.swift in Sources */,

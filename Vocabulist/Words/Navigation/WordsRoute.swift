@@ -14,7 +14,7 @@ enum WordsRoute: Equatable, Hashable {
     var localized: String {
         switch self {
         case .allWords: return String(localized: "All words")
-        case .chapter(let chapter): return chapter.title
+        case .chapter(let chapter): return chapter.title ?? ""
         }
     }
 }

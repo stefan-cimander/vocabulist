@@ -14,21 +14,12 @@ struct WordsNavigationView: View {
     @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Word.creationDate, ascending: true)], animation: .default)
     private var words: FetchedResults<Word>
     
-    private var chapters = [
-        Chapter(title: "La magia de Sevilla"),
-        Chapter(title: "Regalo de Reyes"),
-        Chapter(title: "A medias"),
-        Chapter(title: "Una Nochevieja inesperada"),
-        Chapter(title: "Papel en blanco"),
-        Chapter(title: "Por una vez, algo diferente"),
-        Chapter(title: "Ciento cuarenta"),
-        Chapter(title: "La torre"),
-        Chapter(title: "Un golpe de suerte"),
-        Chapter(title: "La rana de la suerte"),
-    ]
+    @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Chapter.creationDate, ascending: true)], animation: .default)
+    private var chapters: FetchedResults<Chapter>
     
     @State private var selection: WordsRoute?
     @State private var showAddWordDialog = false
+    @State private var hoverNewChapterButton = false
     
     var body: some View {
         NavigationSplitView {
@@ -42,10 +33,11 @@ struct WordsNavigationView: View {
                     ForEach(chapters.indices, id: \.self) { index in
                         let chapter = chapters[index]
                         NavigationLink(value: WordsRoute.chapter(chapter)) {
-                            Label { Text(chapter.title) } icon: { Text("\(index + 1)") }
+                            Label { Text(chapter.title ?? "") } icon: { Text("\(index + 1)") }
                         }
                     }
                 }
+                
             }
             #if os(iOS)
             .listStyle(.insetGrouped)
@@ -53,6 +45,23 @@ struct WordsNavigationView: View {
             .frame(minWidth: 224)
             .environment(\.defaultMinListRowHeight, 52)
             .navigationTitle("Vocabulary")
+            
+            #if os(macOS)
+            Spacer()
+            HStack {
+                Button(action: addNewChapter) {
+                    Label("Neuer Ordner", systemImage: "plus.circle")
+                }
+                .opacity(hoverNewChapterButton ? 1.0 : 0.8)
+                .buttonStyle(.plain)
+                .onHover { hoverNewChapterButton = $0 }
+                
+                Spacer()
+            }
+            .padding(.vertical, 6)
+            .padding(.horizontal, 10)
+            #endif
+            
         } detail: {
             WordOverview(words: words.map { $0 }, onDelete: deleteWords)
                 .toolbar {
@@ -74,13 +83,22 @@ struct WordsNavigationView: View {
         #endif
     }
     
+    private func addNewChapter() {
+        withAnimation {
+            let chapter = Chapter(context: viewContext)
+            chapter.title = "Sample Chapter"
+            chapter.creationDate = Date()
+            try? viewContext.save()
+        }
+    }
+    
     private func addWord(with input: AddWordInput) {
         withAnimation {
-            let newWord = Word(context: viewContext)
-            newWord.foreignName = input.foreignName
-            newWord.nativeName = input.nativeName
-            newWord.creationDate = Date()
-            newWord.level = 1
+            let word = Word(context: viewContext)
+            word.foreignName = input.foreignName
+            word.nativeName = input.nativeName
+            word.creationDate = Date()
+            word.level = 1
             try? viewContext.save()
         }
     }
