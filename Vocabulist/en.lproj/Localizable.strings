@@ -8,14 +8,18 @@
 */
 
 "Add" = "Add";
+"Done" = "Done";
 "Cancel" = "Cancel";
+"Rename" = "Rename";
 "Delete" = "Delete";
 
 
 // Chapters
 
+"Chapter" = "Chapter";
 "Chapters" = "Chapters";
 "New chapter" = "New chapter";
+"Rename chapter" = "Rename chapter";
 "Title" = "Title";
 
 

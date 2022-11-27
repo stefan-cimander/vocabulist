@@ -13,6 +13,8 @@
 		E30966FE29328A2C0071B87F /* ChaptersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30966FC29328A2C0071B87F /* ChaptersList.swift */; };
 		E3096704293299A10071B87F /* AddChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3096702293299A10071B87F /* AddChapterView.swift */; };
 		E309670629329AF00071B87F /* AddChapterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E309670529329AF00071B87F /* AddChapterButton.swift */; };
+		E309670A2932B6E60071B87F /* AddChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30967092932B6E60071B87F /* AddChapterView.swift */; };
+		E309670D2932D9EC0071B87F /* EditChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E309670C2932D9EC0071B87F /* EditChapterView.swift */; };
 		E31A619A2932240E0019AD94 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C045E2931663C00C4B8C8 /* SettingsStore.swift */; };
 		E31A619B2932241E0019AD94 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C045B293161CF00C4B8C8 /* Language.swift */; };
 		E31A619D293224D90019AD94 /* NavigationWordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31A619C293224D90019AD94 /* NavigationWordsView.swift */; };
@@ -55,6 +57,8 @@
 		E30966FC29328A2C0071B87F /* ChaptersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersList.swift; sourceTree = "<group>"; };
 		E3096702293299A10071B87F /* AddChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChapterView.swift; sourceTree = "<group>"; };
 		E309670529329AF00071B87F /* AddChapterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChapterButton.swift; sourceTree = "<group>"; };
+		E30967092932B6E60071B87F /* AddChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChapterView.swift; sourceTree = "<group>"; };
+		E309670C2932D9EC0071B87F /* EditChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditChapterView.swift; sourceTree = "<group>"; };
 		E31A619C293224D90019AD94 /* NavigationWordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationWordsView.swift; sourceTree = "<group>"; };
 		E31A61A2293226400019AD94 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		E31A61A4293227270019AD94 /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTab.swift; sourceTree = "<group>"; };
@@ -143,6 +147,31 @@
 				E3096702293299A10071B87F /* AddChapterView.swift */,
 			);
 			path = Add;
+			sourceTree = "<group>";
+		};
+		E30967072932B6860071B87F /* Chapters */ = {
+			isa = PBXGroup;
+			children = (
+				E30967082932B6DB0071B87F /* Add */,
+				E309670B2932D9D70071B87F /* Edit */,
+			);
+			path = Chapters;
+			sourceTree = "<group>";
+		};
+		E30967082932B6DB0071B87F /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				E30967092932B6E60071B87F /* AddChapterView.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		E309670B2932D9D70071B87F /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				E309670C2932D9EC0071B87F /* EditChapterView.swift */,
+			);
+			path = Edit;
 			sourceTree = "<group>";
 		};
 		E31A619F293224E30019AD94 /* Navigation */ = {
@@ -338,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				E31A61A0293225660019AD94 /* App */,
+				E30967072932B6860071B87F /* Chapters */,
 				E31A61A6293227690019AD94 /* Profile */,
 				E3C1183429300C61004E2766 /* Words */,
 				E3D76C08293008E000A0092D /* Preview Content */,
@@ -482,7 +512,9 @@
 				E3C1183229300AE5004E2766 /* AddWordInput.swift in Sources */,
 				E3B6B8F6293133E300B8317C /* WordOverview.swift in Sources */,
 				E3B6B8F82931342D00B8317C /* WordRowView.swift in Sources */,
+				E309670D2932D9EC0071B87F /* EditChapterView.swift in Sources */,
 				E3D76C132930090400A0092D /* Persistence.swift in Sources */,
+				E309670A2932B6E60071B87F /* AddChapterView.swift in Sources */,
 				E3C1183B29301149004E2766 /* String.swift in Sources */,
 				E3D76C0E293008FB00A0092D /* App.swift in Sources */,
 				E3C1183729300C72004E2766 /* AddWordView.swift in Sources */,
