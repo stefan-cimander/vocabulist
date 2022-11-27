@@ -7,4 +7,4 @@ assignees: ''
 
 ---
 
-As a <role> I want to <do a certain action> so I can <achieve a specific goal>.
+As a [role] I want to [do a certain action] so I can [achieve a specific goal].
