@@ -9,10 +9,11 @@ import SwiftUI
 
 struct AddWordView: View {
     
-    let onAdd: (AddWordInput) -> Void
+    let chapter: Chapter
     
-    @EnvironmentObject private var settingsStore: SettingsStore
     @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject private var settingsStore: SettingsStore
+    @EnvironmentObject private var wordsStore: WordsStore
 
     @State private var foreignName = ""
     @State private var nativeName = ""
@@ -37,28 +38,32 @@ struct AddWordView: View {
         }
         .padding()
         .frame(width: 320)
-        .toolbar {
-            ToolbarItem(placement: .primaryAction, content: addButton)
-            ToolbarItem(placement: .cancellationAction, content: cancelButton)
+        .toolbar { toolbar }
+    }
+    
+    @ToolbarContentBuilder
+    private var toolbar: some ToolbarContent {
+        ToolbarItem(placement: .primaryAction) {
+            Button("Add", action: addWord)
+                .disabled(!isValidWord)
+        }
+        ToolbarItem(placement: .cancellationAction) {
+            Button("Cancel", action: dismiss.callAsFunction)
         }
     }
     
-    // MARK: Toolbar item buttons
+    private var isValidWord: Bool {
+        !foreignName.trimmed().isEmpty && !nativeName.trimmed().isEmpty
+    }
     
-    private func addButton() -> some View {
-        Button("Add") {
+    private func addWord() {
+        guard isValidWord else { return }
+        withAnimation {
             let addWordInput = AddWordInput(
                 foreignName: foreignName.trimmed(),
                 nativeName: nativeName.trimmed()
             )
-            onAdd(addWordInput)
-            dismiss()
-        }
-        .disabled(foreignName.trimmed().isEmpty || nativeName.trimmed().isEmpty)
-    }
-    
-    private func cancelButton() -> some View {
-        Button("Cancel") {
+            wordsStore.addWord(with: addWordInput, to: chapter)
             dismiss()
         }
     }

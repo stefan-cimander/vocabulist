@@ -9,10 +9,11 @@ import SwiftUI
 
 struct AddWordView: View {
     
-    let onAdd: (AddWordInput) -> Void
+    let chapter: Chapter
     
-    @EnvironmentObject private var settingsStore: SettingsStore
     @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject private var settingsStore: SettingsStore
+    @EnvironmentObject private var wordsStore: WordsStore
     
     @State private var foreignName = ""
     @State private var nativeName = ""
@@ -30,33 +31,22 @@ struct AddWordView: View {
                 .disableAutocorrection(true)
             }
             .navigationBarTitle("New word", displayMode: .inline)
-            .navigationBarItems(leading: cancelButton, trailing: doneButton)
+            .navigationBarItems(leading: Button("Cancel", action: dismiss.callAsFunction),
+                                trailing: Button("Add", action: addWord).disabled(!isValidWord).font(.headline))
         }
     }
     
-    // MARK: Navigation bar item buttons
-    
-    private var cancelButton: some View {
-        Button("Cancel") { dismiss() }
+    private var isValidWord: Bool {
+        !foreignName.trimmed().isEmpty && !nativeName.trimmed().isEmpty
     }
     
-    private var doneButton: some View {
-        Button("Add") {
-            let addWordInput = AddWordInput(
-                foreignName: foreignName.trimmed(),
-                nativeName: nativeName.trimmed()
-            )
-            onAdd(addWordInput)
-            dismiss()
-        }
-        .disabled(foreignName.trimmed().isEmpty || nativeName.trimmed().isEmpty)
-        .font(.headline)
-    }
-}
-
-struct AddWordView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddWordView() { _ in }
-            .environmentObject(SettingsStore())
+    private func addWord() {
+        guard isValidWord else { return }
+        let addWordInput = AddWordInput(
+            foreignName: foreignName.trimmed(),
+            nativeName: nativeName.trimmed()
+        )
+        wordsStore.addWord(with: addWordInput, to: chapter)
+        dismiss()
     }
 }

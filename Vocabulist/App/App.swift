@@ -12,13 +12,16 @@ struct VocabulistApp: App {
     
     let persistenceController = PersistenceController.shared
     
-    @ObservedObject private var settingsStore = SettingsStore()
+    @StateObject private var settingsStore = SettingsStore()
+    @StateObject private var wordsStore = WordsStore()
 
     var body: some Scene {
         WindowGroup {
             AppView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(settingsStore)
+                .environmentObject(wordsStore)
+                .onAppear(perform: wordsStore.loadAllWords)
         }
         .commands {
             SidebarCommands()

@@ -1,5 +1,5 @@
 //
-//  WordOverview.swift
+//  WordsListView.swift
 //  Vocabulist iOS
 //
 //  Created by Stefan Cimander on 25.11.22.
@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-struct WordOverview: View {
+struct WordsListView: View {
     
     let words: [Word]
-    let onDelete: (IndexSet) -> Void
+    
+    @EnvironmentObject private var wordsStore: WordsStore
     
     var body: some View {
         List {
@@ -20,20 +21,27 @@ struct WordOverview: View {
                         deleteButton(word)
                     }
             }
-            .onDelete(perform: onDelete)
+            .onDelete(perform: deleteWords)
         }
     }
     
     private func deleteButton(_ word: Word) -> some View {
         let index = words.firstIndex(where: { $0.id == word.id })!
-        let action = { onDelete(IndexSet(arrayLiteral: index)) }
+        let action = { deleteWords(at: IndexSet(arrayLiteral: index)) }
         let label = { Label("Delete", systemImage: "trash") }
         return Button(role: .destructive, action: action, label: label)
     }
+    
+    private func deleteWords(at offsets: IndexSet) {
+        withAnimation {
+            let wordsToDelete = offsets.map { index in words[index] }
+            wordsStore.deleteWords(wordsToDelete)
+        }
+    }
 }
 
-struct WordOverview_Previews: PreviewProvider {
+struct WordsListViewPreviews: PreviewProvider {
     static var previews: some View {
-        WordOverview(words: []) { _ in }
+        WordsListView(words: [])
     }
 }

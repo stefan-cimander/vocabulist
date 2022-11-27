@@ -36,10 +36,10 @@ struct ChaptersList: View {
                         .contextMenu {
                             editButton(for: chapter)
                         }
-                        
                         #endif
                     }
                 }
+                #if os(iOS)
                 .sheet(isPresented: .init(get: {
                     chapterToEdit != nil
                 }, set: { isPresented in
@@ -48,6 +48,7 @@ struct ChaptersList: View {
                 })) {
                     EditChapterView(chapter: chapterToEdit!, onEdit: editChapter)
                 }
+                #endif
             }
         }
         .frame(minWidth: 224)
@@ -70,7 +71,7 @@ struct ChaptersList: View {
         #if os(macOS)
         Spacer()
         HStack {
-            AddChapterButton(hover: $hoverNewChapterButton, onAdd: addNewChapter)
+            AddChapterButton(hover: $hoverNewChapterButton, onAdd: addChapter)
             Spacer()
         }
         .padding(.vertical, 6)

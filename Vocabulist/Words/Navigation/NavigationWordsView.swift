@@ -16,7 +16,7 @@ struct NavigationWordsView: View {
             ChaptersList(selection: $selection)
         } detail: {
             let title = selection?.localized ?? ""
-            WordsDetailView(title: title, chapter: selectedChapter)
+            WordsOverview(title: title, chapter: selectedChapter)
         }
         #if os(macOS)
         .task { selection = .allWords }
