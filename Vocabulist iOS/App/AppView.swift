@@ -16,9 +16,12 @@ struct AppView: View {
             NavigationWordsView()
                 .tabItem { Label("Vocabulary", systemImage: "book") }
                 .tag(AppTab.words)
+            PracticeView()
+                .tabItem { Label("Practice", systemImage: "play") }
+                .tag(AppTab.practice)
             ProfileView()
                 .tabItem { Label("Profile", systemImage: "person") }
-                .tag(AppTab.settings)
+                .tag(AppTab.profile)
         }
     }
 }

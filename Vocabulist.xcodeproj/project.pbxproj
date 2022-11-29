@@ -55,6 +55,7 @@
 		E3F836D429360AB5006B9197 /* EditChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F836D329360AB5006B9197 /* EditChapterView.swift */; };
 		E3F836D629362447006B9197 /* ChaptersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F836D529362447006B9197 /* ChaptersStore.swift */; };
 		E3F836D729362447006B9197 /* ChaptersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F836D529362447006B9197 /* ChaptersStore.swift */; };
+		E3F836DA29363E1D006B9197 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F836D929363E1D006B9197 /* PracticeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		E3D76C252930099C00A0092D /* Vocabulist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vocabulist.entitlements; sourceTree = "<group>"; };
 		E3F836D329360AB5006B9197 /* EditChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditChapterView.swift; sourceTree = "<group>"; };
 		E3F836D529362447006B9197 /* ChaptersStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersStore.swift; sourceTree = "<group>"; };
+		E3F836D929363E1D006B9197 /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,6 +381,7 @@
 			children = (
 				E31A61A0293225660019AD94 /* App */,
 				E30967072932B6860071B87F /* Chapters */,
+				E3F836D829363E0E006B9197 /* Practice */,
 				E31A61A6293227690019AD94 /* Profile */,
 				E3C1183429300C61004E2766 /* Words */,
 				E3D76C08293008E000A0092D /* Preview Content */,
@@ -421,6 +424,14 @@
 				E3F836D329360AB5006B9197 /* EditChapterView.swift */,
 			);
 			path = Edit;
+			sourceTree = "<group>";
+		};
+		E3F836D829363E0E006B9197 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				E3F836D929363E1D006B9197 /* PracticeView.swift */,
+			);
+			path = Practice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,6 +542,7 @@
 				E3D76C0F293008FD00A0092D /* AppView.swift in Sources */,
 				E3C1183229300AE5004E2766 /* AddWordInput.swift in Sources */,
 				E3B6B8F6293133E300B8317C /* WordsListView.swift in Sources */,
+				E3F836DA29363E1D006B9197 /* PracticeView.swift in Sources */,
 				E3B6B8F82931342D00B8317C /* WordRowView.swift in Sources */,
 				E309670D2932D9EC0071B87F /* EditChapterView.swift in Sources */,
 				E3D76C132930090400A0092D /* Persistence.swift in Sources */,

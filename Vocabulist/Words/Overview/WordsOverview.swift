@@ -33,13 +33,25 @@ struct WordsOverview: View {
     
     @ToolbarContentBuilder
     private var toolbar: some ToolbarContent {
-        ToolbarItem {
-            Button(action: { showAddWordDialog.toggle() }) {
-                Label("Add word", systemImage: "plus")
+        #if os(macOS)
+        ToolbarItemGroup(placement: .principal) {
+            Button(action: { }) {
+                Label("Practice words", systemImage: "play.fill")
             }
-            .disabled(chapter == nil)
-            .sheet(isPresented: $showAddWordDialog) {
-                AddWordView(chapter: chapter!)
+            
+        }
+        ToolbarItemGroup{
+            Spacer()
+        }
+        #endif
+        if chapter != nil {
+            ToolbarItemGroup {
+                Button(action: { showAddWordDialog.toggle() }) {
+                    Label("Add word", systemImage: "plus")
+                }
+                .sheet(isPresented: $showAddWordDialog) {
+                    AddWordView(chapter: chapter!)
+                }
             }
         }
     }

@@ -7,5 +7,6 @@
 
 enum AppTab {
     case words
-    case settings
+    case practice
+    case profile
 }
