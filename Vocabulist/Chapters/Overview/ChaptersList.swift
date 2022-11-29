@@ -17,8 +17,8 @@ struct ChaptersList: View {
     private var chapters: FetchedResults<Chapter>
     
     @State private var showAddChapterView = false
-    @State private var chapterToEdit: Chapter?
     @State private var hoverNewChapterButton = false
+    @State private var chapterToEdit: Chapter?
     
     var body: some View {
         List(selection: $selection) {
@@ -32,24 +32,15 @@ struct ChaptersList: View {
                     let chapter = chapters[index]
                     NavigationLink(value: NavigationWordsRoute.chapter(chapter)) {
                         Label { Text(chapter.title ?? "") } icon: { Text("\(index + 1)") }
-                        #if os(iOS)
                         .contextMenu {
                             editButton(for: chapter)
                         }
-                        #endif
                     }
                 }
-                #if os(iOS)
-                .sheet(isPresented: .init(get: {
-                    chapterToEdit != nil
-                }, set: { isPresented in
-                    guard !isPresented else { return }
-                    chapterToEdit = nil
-                })) {
-                    EditChapterView(chapter: chapterToEdit!, onEdit: editChapter)
-                }
-                #endif
             }
+        }
+        .sheet(item: $chapterToEdit) { chapter in
+            EditChapterView(chapter: chapter, onEdit: editChapter)
         }
         .frame(minWidth: 224)
         .environment(\.defaultMinListRowHeight, 52)
