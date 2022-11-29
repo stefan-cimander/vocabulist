@@ -53,6 +53,8 @@
 		E3D76C2F293009B500A0092D /* AddWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E0A3C292EE16C009E5A9F /* AddWordView.swift */; };
 		E3D76C30293009B500A0092D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C41D292E839F002C6FC4 /* Persistence.swift */; };
 		E3F836D429360AB5006B9197 /* EditChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F836D329360AB5006B9197 /* EditChapterView.swift */; };
+		E3F836D629362447006B9197 /* ChaptersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F836D529362447006B9197 /* ChaptersStore.swift */; };
+		E3F836D729362447006B9197 /* ChaptersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F836D529362447006B9197 /* ChaptersStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +95,7 @@
 		E3D76C232930099C00A0092D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E3D76C252930099C00A0092D /* Vocabulist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vocabulist.entitlements; sourceTree = "<group>"; };
 		E3F836D329360AB5006B9197 /* EditChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditChapterView.swift; sourceTree = "<group>"; };
+		E3F836D529362447006B9197 /* ChaptersStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,7 @@
 		E30966FB29328A120071B87F /* Chapters */ = {
 			isa = PBXGroup;
 			children = (
+				E3F836D529362447006B9197 /* ChaptersStore.swift */,
 				E30966FF293299590071B87F /* Overview */,
 			);
 			path = Chapters;
@@ -522,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F836D629362447006B9197 /* ChaptersStore.swift in Sources */,
 				E31A61A8293227770019AD94 /* ProfileView.swift in Sources */,
 				E3D76C0F293008FD00A0092D /* AppView.swift in Sources */,
 				E3C1183229300AE5004E2766 /* AddWordInput.swift in Sources */,
@@ -549,6 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F836D729362447006B9197 /* ChaptersStore.swift in Sources */,
 				E3D76C30293009B500A0092D /* Persistence.swift in Sources */,
 				E3D76C2B293009B500A0092D /* App.swift in Sources */,
 				E3C1183329300AE5004E2766 /* AddWordInput.swift in Sources */,

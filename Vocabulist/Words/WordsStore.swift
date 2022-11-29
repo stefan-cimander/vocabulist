@@ -5,7 +5,6 @@
 //  Created by Stefan Cimander on 27.11.22.
 //
 
-import SwiftUI
 import CoreData
 
 class WordsStore: NSObject, ObservableObject {

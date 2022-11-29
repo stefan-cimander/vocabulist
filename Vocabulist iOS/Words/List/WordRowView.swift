@@ -20,14 +20,3 @@ struct WordRowView: View {
         }
     }
 }
-
-struct WordRowView_Previews: PreviewProvider {
-    static var context = PersistenceController.preview.container.viewContext
-    
-    static var previews: some View {
-        let word = Word(context: context)
-        word.foreignName = "el arbol"
-        word.nativeName = "der Baum"
-        return WordRowView(word: word)
-    }
-}

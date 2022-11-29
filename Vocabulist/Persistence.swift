@@ -11,17 +11,6 @@ struct PersistenceController {
     static let shared = PersistenceController()
 
     let container: NSPersistentCloudKitContainer
-    
-    static var preview: PersistenceController = {
-        let result = PersistenceController(inMemory: true)
-        let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let word = Word(context: viewContext)
-            word.creationDate = Date()
-        }
-        try? viewContext.save()
-        return result
-    }()
 
     init(inMemory: Bool = false) {
         container = NSPersistentCloudKitContainer(name: "Vocabulist")

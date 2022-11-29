@@ -11,10 +11,7 @@ struct ChaptersList: View {
     
     @Binding var selection: NavigationWordsRoute?
     
-    @Environment(\.managedObjectContext) private var viewContext
-    
-    @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Chapter.creationDate, ascending: true)], animation: .default)
-    private var chapters: FetchedResults<Chapter>
+    @EnvironmentObject private var chaptersStore: ChaptersStore
     
     @State private var showAddChapterView = false
     @State private var showDeleteChapterAlert = false
@@ -30,8 +27,8 @@ struct ChaptersList: View {
                 }
             }
             Section("Chapters") {
-                ForEach(chapters.indices, id: \.self) { index in
-                    let chapter = chapters[index]
+                ForEach(chaptersStore.chapters.indices, id: \.self) { index in
+                    let chapter = chaptersStore.chapters[index]
                     NavigationLink(value: NavigationWordsRoute.chapter(chapter)) {
                         Label { Text(chapter.title ?? "") } icon: { Text("\(index + 1)") }
                         .contextMenu {
@@ -90,30 +87,19 @@ struct ChaptersList: View {
     }
     
     private func addChapter(with title: String) {
-        withAnimation {
-            let chapter = Chapter(context: viewContext)
-            chapter.title = title
-            chapter.creationDate = Date()
-            try? viewContext.save()
-        }
+        withAnimation { chaptersStore.addChapter(withTitle: title) }
     }
     
     private func editChapter(_ chapter: Chapter, withTitle title: String) {
-        withAnimation {
-            chapter.title = title
-            try? viewContext.save()
-        }
+        withAnimation { chaptersStore.editChapter(chapter, withTitle: title) }
     }
     
     private func deleteChapter() {
         guard let chapter = chapterToDelete else { return }
-        withAnimation {
-            viewContext.delete(chapter)
-            try? viewContext.save()
+        withAnimation { chaptersStore.deleteChapter(chapter) }
             
-            #if os(macOS)
-            selection = .allWords
-            #endif
-        }
+        #if os(macOS)
+        selection = .allWords
+        #endif
     }
 }
