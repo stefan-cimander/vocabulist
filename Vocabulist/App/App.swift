@@ -22,8 +22,7 @@ struct VocabulistApp: App {
                 .environmentObject(chaptersStore)
                 .environmentObject(settingsStore)
                 .environmentObject(wordsStore)
-                .onAppear(perform: chaptersStore.loadAllChapters)
-                .onAppear(perform: wordsStore.loadAllWords)
+                .onAppear(perform: setupInitialAppState)
         }
         .commands {
             SidebarCommands()
@@ -35,5 +34,15 @@ struct VocabulistApp: App {
                 .environmentObject(settingsStore)
         }
         #endif
+    }
+    
+    private func setupInitialAppState() {
+        chaptersStore.loadAllChapters()
+        wordsStore.loadAllWords()
+        
+        if chaptersStore.chapters.isEmpty {
+            let chapterTitle = String(localized: "First chapter")
+            chaptersStore.addChapter(withTitle: chapterTitle)
+        }
     }
 }
