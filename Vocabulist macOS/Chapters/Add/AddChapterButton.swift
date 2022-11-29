@@ -9,9 +9,9 @@ import SwiftUI
 
 struct AddChapterButton: View {
     
-    @Binding var hover: Bool
     let onAdd: (String) -> Void
     
+    @State private var hover = false
     @State private var showAddChapterView = false
     
     var body: some View {
@@ -29,6 +29,6 @@ struct AddChapterButton: View {
 
 struct AddChapterButton_Previews: PreviewProvider {
     static var previews: some View {
-        AddChapterButton(hover: .constant(false)) { _ in }
+        AddChapterButton() { _ in }
     }
 }

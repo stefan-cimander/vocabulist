@@ -21,6 +21,7 @@
 "New chapter" = "New chapter";
 "Rename chapter" = "Rename chapter";
 "Title" = "Title";
+"Delete chapter \"%@\"?" = "Delete chapter \"%@\"?";
 
 
 // Languages
