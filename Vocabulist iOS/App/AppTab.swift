@@ -7,6 +7,6 @@
 
 enum AppTab {
     case words
-    case practice
+    case exercises
     case profile
 }

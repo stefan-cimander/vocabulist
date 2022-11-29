@@ -29,6 +29,9 @@ struct VocabulistApp: App {
         }
         
         #if os(macOS)
+        Window("Exercises", id: "exercises") {
+            ExercisesView()
+        }
         Settings {
             SettingsView()
                 .environmentObject(settingsStore)

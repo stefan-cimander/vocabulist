@@ -25,6 +25,10 @@
 "Delete chapter \"%@\"?" = "Kapitel \"%@\" löschen?";
 
 
+// Exercises
+"Exercises" = "Übungen";
+
+
 // Languages
 
 "English" = "Englisch";

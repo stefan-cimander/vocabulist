@@ -16,9 +16,9 @@ struct AppView: View {
             NavigationWordsView()
                 .tabItem { Label("Vocabulary", systemImage: "book") }
                 .tag(AppTab.words)
-            PracticeView()
-                .tabItem { Label("Practice", systemImage: "play") }
-                .tag(AppTab.practice)
+            ExercisesView()
+                .tabItem { Label("Exercises", systemImage: "play") }
+                .tag(AppTab.exercises)
             ProfileView()
                 .tabItem { Label("Profile", systemImage: "person") }
                 .tag(AppTab.profile)
