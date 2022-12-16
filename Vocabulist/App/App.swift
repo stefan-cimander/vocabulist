@@ -29,8 +29,8 @@ struct VocabulistApp: App {
         }
         
         #if os(macOS)
-        Window("Exercises", id: "exercises") {
-            ExercisesView()
+        Window("Exercise", id: "exercise") {
+            ExerciseView()
         }
         Settings {
             SettingsView()

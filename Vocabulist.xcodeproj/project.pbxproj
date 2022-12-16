@@ -24,7 +24,12 @@
 		E31A61A3293226400019AD94 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31A61A2293226400019AD94 /* AppView.swift */; };
 		E31A61A5293227270019AD94 /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31A61A4293227270019AD94 /* AppTab.swift */; };
 		E31A61A8293227770019AD94 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31A61A7293227770019AD94 /* ProfileView.swift */; };
-		E35A960C29365C820021B72C /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F836D929363E1D006B9197 /* ExercisesView.swift */; };
+		E32E913F293BD26E00562C78 /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32E913E293BD26E00562C78 /* ExerciseViewModel.swift */; };
+		E32E9140293BD26E00562C78 /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32E913E293BD26E00562C78 /* ExerciseViewModel.swift */; };
+		E32E9143293BD86300562C78 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32E9142293BD86300562C78 /* ExerciseView.swift */; };
+		E32E9147293BD89A00562C78 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F836D929363E1D006B9197 /* ExerciseView.swift */; };
+		E32E9149293BDA2100562C78 /* ExerciseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32E9148293BDA2100562C78 /* ExerciseState.swift */; };
+		E32E914A293BDA2100562C78 /* ExerciseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32E9148293BDA2100562C78 /* ExerciseState.swift */; };
 		E36C045429315F0200C4B8C8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C045329315F0200C4B8C8 /* SettingsView.swift */; };
 		E36C045C293161CF00C4B8C8 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C045B293161CF00C4B8C8 /* Language.swift */; };
 		E36C045F2931663C00C4B8C8 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C045E2931663C00C4B8C8 /* SettingsStore.swift */; };
@@ -56,7 +61,6 @@
 		E3F836D429360AB5006B9197 /* EditChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F836D329360AB5006B9197 /* EditChapterView.swift */; };
 		E3F836D629362447006B9197 /* ChaptersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F836D529362447006B9197 /* ChaptersStore.swift */; };
 		E3F836D729362447006B9197 /* ChaptersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F836D529362447006B9197 /* ChaptersStore.swift */; };
-		E3F836DA29363E1D006B9197 /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F836D929363E1D006B9197 /* ExercisesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +75,9 @@
 		E31A61A2293226400019AD94 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		E31A61A4293227270019AD94 /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTab.swift; sourceTree = "<group>"; };
 		E31A61A7293227770019AD94 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E32E913E293BD26E00562C78 /* ExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
+		E32E9142293BD86300562C78 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		E32E9148293BDA2100562C78 /* ExerciseState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseState.swift; sourceTree = "<group>"; };
 		E332C41B292E839F002C6FC4 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		E332C41D292E839F002C6FC4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		E332C420292E839F002C6FC4 /* Vocabulist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vocabulist.xcdatamodel; sourceTree = "<group>"; };
@@ -98,7 +105,7 @@
 		E3D76C252930099C00A0092D /* Vocabulist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vocabulist.entitlements; sourceTree = "<group>"; };
 		E3F836D329360AB5006B9197 /* EditChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditChapterView.swift; sourceTree = "<group>"; };
 		E3F836D529362447006B9197 /* ChaptersStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersStore.swift; sourceTree = "<group>"; };
-		E3F836D929363E1D006B9197 /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
+		E3F836D929363E1D006B9197 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +228,22 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		E32E9141293BD84100562C78 /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				E3F836D929363E1D006B9197 /* ExerciseView.swift */,
+			);
+			path = Exercises;
+			sourceTree = "<group>";
+		};
+		E32E9146293BD87300562C78 /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				E32E9142293BD86300562C78 /* ExerciseView.swift */,
+			);
+			path = Exercises;
+			sourceTree = "<group>";
+		};
 		E332C40F292E839F002C6FC4 = {
 			isa = PBXGroup;
 			children = (
@@ -289,7 +312,8 @@
 		E35A960B29365C6E0021B72C /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
-				E3F836D929363E1D006B9197 /* ExercisesView.swift */,
+				E32E913E293BD26E00562C78 /* ExerciseViewModel.swift */,
+				E32E9148293BDA2100562C78 /* ExerciseState.swift */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -391,7 +415,7 @@
 			children = (
 				E31A61A0293225660019AD94 /* App */,
 				E30967072932B6860071B87F /* Chapters */,
-				E3F836D829363E0E006B9197 /* Practice */,
+				E32E9146293BD87300562C78 /* Exercises */,
 				E31A61A6293227690019AD94 /* Profile */,
 				E3C1183429300C61004E2766 /* Words */,
 				E3D76C08293008E000A0092D /* Preview Content */,
@@ -412,6 +436,7 @@
 			children = (
 				E31A61A1293226300019AD94 /* App */,
 				E30966F52932827E0071B87F /* Chapters */,
+				E32E9141293BD84100562C78 /* Exercises */,
 				E36C045229315EF700C4B8C8 /* Settings */,
 				E3C1182E29300A88004E2766 /* Words */,
 				E3D76C252930099C00A0092D /* Vocabulist.entitlements */,
@@ -434,13 +459,6 @@
 				E3F836D329360AB5006B9197 /* EditChapterView.swift */,
 			);
 			path = Edit;
-			sourceTree = "<group>";
-		};
-		E3F836D829363E0E006B9197 /* Practice */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Practice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -546,13 +564,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32E9143293BD86300562C78 /* ExerciseView.swift in Sources */,
 				E3F836D629362447006B9197 /* ChaptersStore.swift in Sources */,
 				E31A61A8293227770019AD94 /* ProfileView.swift in Sources */,
 				E3D76C0F293008FD00A0092D /* AppView.swift in Sources */,
 				E3C1183229300AE5004E2766 /* AddWordInput.swift in Sources */,
 				E3B6B8F6293133E300B8317C /* WordsListView.swift in Sources */,
-				E3F836DA29363E1D006B9197 /* ExercisesView.swift in Sources */,
 				E3B6B8F82931342D00B8317C /* WordRowView.swift in Sources */,
+				E32E9149293BDA2100562C78 /* ExerciseState.swift in Sources */,
 				E309670D2932D9EC0071B87F /* EditChapterView.swift in Sources */,
 				E3D76C132930090400A0092D /* Persistence.swift in Sources */,
 				E309670F2932F8230071B87F /* WordsStore.swift in Sources */,
@@ -563,6 +582,7 @@
 				E31A619D293224D90019AD94 /* NavigationWordsView.swift in Sources */,
 				E3D76C152930090D00A0092D /* Vocabulist.xcdatamodeld in Sources */,
 				E31A619B2932241E0019AD94 /* Language.swift in Sources */,
+				E32E913F293BD26E00562C78 /* ExerciseViewModel.swift in Sources */,
 				E31A61A5293227270019AD94 /* AppTab.swift in Sources */,
 				E30966FD29328A2C0071B87F /* ChaptersList.swift in Sources */,
 				E30966F7293286910071B87F /* WordsOverview.swift in Sources */,
@@ -579,9 +599,10 @@
 				E3D76C30293009B500A0092D /* Persistence.swift in Sources */,
 				E3D76C2B293009B500A0092D /* App.swift in Sources */,
 				E3C1183329300AE5004E2766 /* AddWordInput.swift in Sources */,
+				E32E9147293BD89A00562C78 /* ExerciseView.swift in Sources */,
 				E30966FE29328A2C0071B87F /* ChaptersList.swift in Sources */,
-				E35A960C29365C820021B72C /* ExercisesView.swift in Sources */,
 				E3F836D429360AB5006B9197 /* EditChapterView.swift in Sources */,
+				E32E914A293BDA2100562C78 /* ExerciseState.swift in Sources */,
 				E3C1183C29301149004E2766 /* String.swift in Sources */,
 				E3D76C2E293009B500A0092D /* NavigationWordsRoute.swift in Sources */,
 				E36C045429315F0200C4B8C8 /* SettingsView.swift in Sources */,
@@ -592,6 +613,7 @@
 				E3D76C2D293009B500A0092D /* WordsTableView.swift in Sources */,
 				E309670629329AF00071B87F /* AddChapterButton.swift in Sources */,
 				E36C04612931705F00C4B8C8 /* SettingsTab.swift in Sources */,
+				E32E9140293BD26E00562C78 /* ExerciseViewModel.swift in Sources */,
 				E30966F8293286910071B87F /* WordsOverview.swift in Sources */,
 				E31A61A3293226400019AD94 /* AppView.swift in Sources */,
 				E36C045F2931663C00C4B8C8 /* SettingsStore.swift in Sources */,

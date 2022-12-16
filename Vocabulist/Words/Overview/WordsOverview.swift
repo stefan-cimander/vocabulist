@@ -15,6 +15,7 @@ struct WordsOverview: View {
     @EnvironmentObject private var wordsStore: WordsStore
     @Environment(\.openWindow) private var openWindow
     
+    @State private var showExerciseDialog = false
     @State private var showAddWordDialog = false
     
     private var wordsOfChapter: [Word] {
@@ -36,8 +37,11 @@ struct WordsOverview: View {
     private var toolbar: some ToolbarContent {
         #if os(macOS)
         ToolbarItemGroup(placement: .principal) {
-            Button(action: { openWindow(id: "exercises") }) {
+            Button(action: { showExerciseDialog = true }) {
                 Label("Practice words", systemImage: "play.fill")
+            }
+            .sheet(isPresented: $showExerciseDialog) {
+                ExerciseView()
             }
         }
         ToolbarItemGroup{
